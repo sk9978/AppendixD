@@ -2,7 +2,7 @@
 
 	function helloWorld()
 	{
-		alert("Hello world");
+		console.log("Hello world");
 	}
 	
 $(document).ready(function()
@@ -24,6 +24,7 @@ $("#settings_page_button").on("click",function()
 
 $(document).ready(function()
 {
+	helloWorld();
 	setProfileInfo();
 });
 
