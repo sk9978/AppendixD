@@ -1,5 +1,6 @@
-$("settings_back").on("click",function()
+$("#settings_back").on("click",function()
 {
+	console.log('back');
 	slideonedown("settings_screen");
 	setTimeout(function()
 	{
@@ -32,8 +33,8 @@ $("#information_form").on("submit", function(e){
   	localStorage.setItem("weight", obj.weight);
   
   	updateProfileInformation();
-  
-  	$(".back").trigger("click");
+    console.log('Information Submitted');
+  	$("#settings_back").trigger("click");
 });
 
 function setSettingsValuesIfThere(){
